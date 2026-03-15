@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { P } from "./theme";
-import { Particles, TopBar, BottomBar, Corners, CenterGlow, NavBtn, PageLabel, Confetti, Fireworks, Drips, AudioPlayer } from "./SharedUI";
+import { Particles, TopBar, BottomBar, Corners, CenterGlow, NavBtn, PageLabel, Confetti, Fireworks, Drips } from "./SharedUI";
 
 function Candle({ blown, onClick }) {
   return (
@@ -219,7 +219,7 @@ export default function CakeCelebrationPage() {
           letterSpacing: "0.22em", fontSize: "clamp(7px,0.9vw,10px)", textTransform: "uppercase"
         }}>Click the candle flame to blow it out</p>}
       </div>
-      <AudioPlayer src={require("../assets/mp3/cakecut.mpeg")} volume={0.35} />
+      {/* <AudioPlayer src={require("../assets/mp3/cakecut.mpeg")} volume={0.35} /> */}
     </div>
   )
 }

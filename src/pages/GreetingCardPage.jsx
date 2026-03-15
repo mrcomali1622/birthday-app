@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { P } from "./theme";
-import { Particles, TopBar, BottomBar, Corners, CenterGlow, NavBtn, PageLabel, AudioPlayer } from "./SharedUI";
+import { Particles, TopBar, BottomBar, Corners, CenterGlow, NavBtn, PageLabel } from "./SharedUI";
 
 function FloatingHearts() {
   const [hearts] = useState(() =>
@@ -435,7 +435,7 @@ export default function GreetingCardPage() {
           )}
         </AnimatePresence>
       </div>
-      <AudioPlayer src={require("../assets/mp3/greetcard.mp3")} volume={0.35} />
+      {/* <AudioPlayer src={require("../assets/mp3/greetcard.mp3")} volume={0.35} /> */}
     </div>
   );
 }
