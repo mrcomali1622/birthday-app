@@ -2,13 +2,13 @@
 import { AnimatePresence } from "framer-motion";
 import { FONTS } from "./pages/theme";
 import CountdownPage from "./pages/CountdownPage";
-import GreetingCardPage from "./pages/GreetingCardPage";
-import CakeCelebrationPage from "./pages/CakeCelebrationPage";
-import TimelinePage from "./pages/TimelinePage";
-import FinalQuestionPage from "./pages/FinalQuestionPage";
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
-import AlbumPage from "./pages/AlbumPage";
-import GiftPage from "./pages/GiftPage";
+// import GreetingCardPage from "./pages/GreetingCardPage";
+// import CakeCelebrationPage from "./pages/CakeCelebrationPage";
+// import TimelinePage from "./pages/TimelinePage";
+// import FinalQuestionPage from "./pages/FinalQuestionPage";
+import { HashRouter, Route, Routes } from "react-router-dom";
+// import AlbumPage from "./pages/AlbumPage";
+// import GiftPage from "./pages/GiftPage";
 
 export default function App() {
   return (
@@ -25,14 +25,14 @@ export default function App() {
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<CountdownPage />} />
-            <Route path="/greetingcard" element={<><div>Under Development 😁</div></>} />
+            <Route path="/greetingcard" element={<><div>Summa page</div></>} />
             {/* <Route path="/greetingcard" element={<GreetingCardPage />} />
             <Route path="/cakecut" element={<CakeCelebrationPage />} />
             <Route path="/album" element={<AlbumPage />} />
             <Route path="/memories" element={<TimelinePage />} />
             <Route path="/gift" element={<GiftPage />} />
-            <Route path="/question" element={<FinalQuestionPage />} /> */}
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/question" element={<FinalQuestionPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} /> */}
             {/* <Route path="/gift" element={<Navigate to="/question" replace />} /> */}
 
           </Routes>
