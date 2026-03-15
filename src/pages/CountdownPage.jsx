@@ -237,7 +237,7 @@ export default function CountdownPage() {
         if (tl.done) {
           clearInterval(tickRef.current);
           setBursting(true);
-          setTimeout(() => nav("/card"), 1100);
+          setTimeout(() => nav("/wish"), 1100);
         }
       }
     };
